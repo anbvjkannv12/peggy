@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>壞蛋</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .marquee {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            font-size: 80px;
+            color: white;
+            animation: marquee 40s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <span>我只是想要你哄我一下而已，像是說我愛你或對不起寶寶，但你都不說，而且我不喜歡要一直跟你說要傳給我看妳才傳，我沒有不想要知道你的面試，但是你連哄都不哄我一下，還都不主動打給我，你都知道我心情很不好了，我在家的壓力很大欸!!!而且我發現一件事，你都很少叫我寶寶</span>
+    </div>
+</body>
+</html>
